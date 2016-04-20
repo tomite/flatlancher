@@ -1,2 +1,19 @@
-apply plugin: 'java'
+subprojects {
+  repositories {
+    mavenCentral()
+  }
+}
 
+project(':sample') {
+  apply plugin: 'application'
+  
+  mainClassName = 'gui.SampleMain'
+
+  dependencies {
+    compile project(':gui')
+  }
+}
+
+project(':gui') {
+  apply plugin: 'java'
+}
