@@ -11,4 +11,11 @@ public class MyJFrame extends JFrame {
     this.setTitle(title);
     this.setVisible(true);
   }
+
+  public void setFrame() {
+    this.setTitle("タイトル");
+    this.setBounds(200, 200, 200, 160);
+    this.setLocationRelativeTo(null);
+    this.setVisible(true);
+  }
 }

@@ -1,4 +1,4 @@
-package gui.jframe02;
+package gui.jframe03;
 
 import container.MyJFrame;
 
@@ -8,4 +8,3 @@ public class JFrameSample {
     frame.setFrame();
   }
 }
-
