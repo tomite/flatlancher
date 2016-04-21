@@ -2,8 +2,8 @@ package container;
 
 import javax.swing.JFrame;
 
-public class JFrameSample extends JFrame {
-  public JFrameSample() {
+public class MyJFrame extends JFrame {
+  public MyJFrame() {
     super();
   }
 

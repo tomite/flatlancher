@@ -1,11 +1,10 @@
 package gui;
 
-import container.JFrameSample;
-import javax.swing.JFrame;
+import gui.jframe01.JFrameSample;
 
 public class SampleMain {
   public static void main(String[] args) {
-    JFrameSample frame = new JFrameSample();
-    frame.setFrame("タイトル");
+    JFrameSample sample = new JFrameSample();
+    sample.execute();
   }
 }
