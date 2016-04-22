@@ -1,12 +1,13 @@
 package container;
 
 import javax.swing.JFrame;
-import javax.swing.JButton;
+import javax.swing.JPanel;
 import java.awt.Container;
 import java.awt.BorderLayout;
+import java.awt.Color;
 
-public class MyJFrame extends JFrame {
-  public MyJFrame() {
+public class MyJFrame02 extends JFrame {
+  public MyJFrame02() {
     super();
   }
 
@@ -32,8 +33,16 @@ public class MyJFrame extends JFrame {
   public void setContainer() {
     this.setFrame(false);
     this.setBounds(100,100,300,250);
-    JButton btn = new JButton("ボタン");
-    this.add(btn, BorderLayout.NORTH);
+    
+    JPanel p1 = new JPanel();
+    p1.setBackground(Color.BLUE);
+    
+    JPanel p2 = new JPanel();
+    p2.setBackground(Color.ORANGE);
+    
+    Container contentPane = getContentPane();
+    contentPane.add(p1, BorderLayout.NORTH);
+    contentPane.add(p2, BorderLayout.SOUTH);
     this.setVisible(true);
   }
 }
